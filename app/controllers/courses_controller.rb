@@ -5,4 +5,9 @@ class CoursesController < ApplicationController
     render json: course
   end
 
+  def index
+    courses = Course.all
+    render json: courses, each_serializer: CoursesSerializer
+  end
+
 end
