@@ -12,6 +12,11 @@ class StudentsController < ApplicationController
     render json: student
   end
 
+  def index
+    students = Student.all
+    render json: students, each_serializer: StudentSerializer
+  end
+
   private
 
   def student_params
