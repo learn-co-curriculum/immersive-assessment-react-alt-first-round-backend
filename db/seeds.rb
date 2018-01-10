@@ -9,8 +9,8 @@
 
 course_list = [
   {
-    name: "Advanced Mixology",
-    instructor: "Tony Guerrero",
+    name: "Knitting Hats for Cats",
+    instructor: "Tim Campbell",
     semester: "Winter 2017"
   }, {
     name: "Swift for Beginners",
