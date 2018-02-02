@@ -1,4 +1,4 @@
-class StudentsController < ApplicationController
+class Api::V1::StudentsController < ApplicationController
 
   def update
     student = Student.find(params[:id])
