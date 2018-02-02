@@ -1,3 +1,4 @@
 class Course < ApplicationRecord
-  has_many :students
+  has_many :students, dependent: :delete_all
+  belongs_to :user
 end
