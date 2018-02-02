@@ -6,7 +6,8 @@ class CoursesController < ApplicationController
   end
 
   def index
-    courses = Course.all
+  	user = User.find(params[:user_id])
+    courses = User.courses
     render json: courses, each_serializer: CoursesSerializer
   end
 

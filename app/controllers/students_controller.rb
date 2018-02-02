@@ -13,7 +13,9 @@ class StudentsController < ApplicationController
   end
 
   def index
-    students = Student.all
+    user = User.find(params[:user_id])
+
+    students = User.students
     render json: students, each_serializer: StudentSerializer
   end
 
