@@ -25,8 +25,4 @@ class Admin::UsersController < ApplicationController
 		end
 	end
 
-	def drop
-		exec('rake db:setup')
-	end
-
 end

@@ -12,7 +12,6 @@ Rails.application.routes.draw do
     get '/users', to: 'users#index'
 	  get '/users/create/:num_students', to: 'users#generate'
 	  get '/DANGER_CLEAR', to: 'users#clear'
-	  get '/DANGER_CLEAR_EXPERIMENT', to: 'users#drop'
 	end
 
 
