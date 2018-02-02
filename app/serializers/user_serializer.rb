@@ -1,7 +1,7 @@
 class UserSerializer < ActiveModel::Serializer
-   attributes :id, :courses
+   attributes :id
 
-  def courses
-  	    object.courses.map{|course| CourseSerializer.new(course)}
-  end
+  # def courses
+  # 	    object.courses.map{|course| CourseSerializer.new(course)}
+  # end
 end
