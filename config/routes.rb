@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get '/students/', to: 'students#index'
       get '/students/:id', to: 'students#show'
       patch '/students/:id', to: 'students#update'
+      post '/students/:id', to: 'students#update'
     end
   end
   get '/', to: 'application#index'
