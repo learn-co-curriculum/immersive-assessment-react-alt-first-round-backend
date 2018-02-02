@@ -12,7 +12,7 @@ class CoursesController < ApplicationController
 
   def index
   	user = User.find(params[:user_id])
-    courses = User.courses
+    courses = user.courses
     render json: courses, each_serializer: CoursesSerializer
   end
 

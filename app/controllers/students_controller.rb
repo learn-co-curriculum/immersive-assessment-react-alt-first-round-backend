@@ -24,7 +24,7 @@ class StudentsController < ApplicationController
   def index
     user = User.find(params[:user_id])
 
-    students = User.students
+    students = user.students
     render json: students, each_serializer: StudentSerializer
   end
 
