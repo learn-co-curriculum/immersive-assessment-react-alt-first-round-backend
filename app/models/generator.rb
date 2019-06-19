@@ -1,15 +1,16 @@
 
 
 
-class Generator 
+class Generator
 
 	def self.generate_users(num_students)
 
     begin
       newly_created_users = []
 
-			num_students.times do 
+			num_students.times do
 				new_user = User.create()
+				byebug
         newly_created_users << new_user
 
         course_list = [
@@ -45,7 +46,7 @@ class Generator
         ]
 
 
-				courses = course_list.sample(4).map{|course| 
+				courses = course_list.sample(4).map{|course|
 					Course.create(name: course[:name],
 								  instructor: course[:instructor],
 								  semester: course[:semester],
@@ -61,7 +62,7 @@ class Generator
 				    )
 				 end
 			end
-			
+
 			return newly_created_users
     rescue
       return false
@@ -70,6 +71,3 @@ class Generator
 	end
 
 end
-
-
-
