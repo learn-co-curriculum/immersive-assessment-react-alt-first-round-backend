@@ -23,20 +23,16 @@ class Generator
 				    instructor: "Charles Entertainment Cheese",
 				    semester: "Summer 2017"
 				  }, {
-				    name: "Rock Climbing",
-				    instructor: "Avi Flombaum",
-				    semester: "Spring 2017"
-				  }, {
-				    name: "History of Ireland",
-				    instructor: "Johann Kerr",
+				    name: "Golf 102",
+				    instructor: "Jeff Hwang",
 				    semester: "Fall 2017"
 				  }, {
 				    name: "Getting Gainz",
 				    instructor: "Evans Wang",
 				    semester: "Winter 2017"
 				  }, {
-				    name: "Music Theor",
-				    instructor: "Niky Morgan",
+				    name: "The art of bread baking",
+				    instructor: "Ian Hollander",
 				    semester: "Fall 2017"
 				  }, {
 				    name: "Wilderness Survival",

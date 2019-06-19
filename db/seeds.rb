@@ -17,20 +17,16 @@ course_list = [
     instructor: "Charles Entertainment Cheese",
     semester: "Summer 2017"
   }, {
-    name: "Rock Climbing",
-    instructor: "Avi Flombaum",
-    semester: "Spring 2017"
-  }, {
-    name: "History of Ireland",
-    instructor: "Johann Kerr",
+    name: "Golf 102",
+    instructor: "Jeff Hwang",
     semester: "Fall 2017"
   }, {
     name: "Getting Gainz",
     instructor: "Evans Wang",
     semester: "Winter 2017"
   }, {
-    name: "Music Theor",
-    instructor: "Niky Morgan",
+    name: "The art of bread baking",
+    instructor: "Ian Hollander",
     semester: "Fall 2017"
   }, {
     name: "Wilderness Survival",
@@ -44,6 +40,6 @@ begin
   course_list.each{|course| Course.create(course)}
 
   100.times do |i|
-    Student.create(name: Faker::Name.name,class_year: [9, 10, 11, 12].sample, percentage: (70..100).to_a.sample,course_id: (1..7).to_a.sample )
+    Student.create(name: Faker::Name.name,class_year: [9, 10, 11, 12].sample, percentage: (70..100).to_a.sample,course_id: (1..6).to_a.sample )
   end
 end
