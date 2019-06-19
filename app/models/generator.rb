@@ -1,51 +1,48 @@
 
 
 
-class Generator 
+class Generator
 
 	def self.generate_users(num_students)
 
     begin
       newly_created_users = []
 
-			num_students.times do 
+			num_students.times do
 				new_user = User.create()
+
         newly_created_users << new_user
 
-        course_list = [
-          {
-            name: "Knitting Hats for Cats",
-            instructor: "Tim Campbell",
-            semester: "Winter 2017"
-          }, {
-            name: "Swift for Beginners",
-            instructor: "Joe Burgess",
-            semester: "Summer 2017"
-          }, {
-            name: "Rock Climbing",
-            instructor: "Avi Flombaum",
-            semester: "Spring 2017"
-          }, {
-            name: "History of Ireland",
-            instructor: "Johann Kerr",
-            semester: "Fall 2017"
-          }, {
-            name: "Home Ec",
-            instructor: "Jeff Katz",
-            semester: "Winter 2017"
-          }, {
-            name: "Music Theory",
-            instructor: "Niky Morgan",
-            semester: "Fall 2017"
-          }, {
-            name: "Wilderness Survival",
-            instructor: "Alex Griffith",
-            semester: "Spring 2017"
-          }
-        ]
+				course_list = [
+				  {
+				    name: "Knitting Hats for Cats",
+				    instructor: "Tim Campbell",
+				    semester: "Winter 2017"
+				  }, {
+				    name: "Having a good time",
+				    instructor: "Charles Entertainment Cheese",
+				    semester: "Summer 2017"
+				  }, {
+				    name: "Golf 102",
+				    instructor: "Jeff Hwang",
+				    semester: "Fall 2017"
+				  }, {
+				    name: "Getting Gainz",
+				    instructor: "Evans Wang",
+				    semester: "Winter 2017"
+				  }, {
+				    name: "The art of bread baking",
+				    instructor: "Ian Hollander",
+				    semester: "Fall 2017"
+				  }, {
+				    name: "Wilderness Survival",
+				    instructor: "Alex Griffith",
+				    semester: "Spring 2017"
+				  }
+				]
 
 
-				courses = course_list.sample(4).map{|course| 
+				courses = course_list.sample(4).map{|course|
 					Course.create(name: course[:name],
 								  instructor: course[:instructor],
 								  semester: course[:semester],
@@ -61,7 +58,7 @@ class Generator
 				    )
 				 end
 			end
-			
+
 			return newly_created_users
     rescue
       return false
@@ -70,6 +67,3 @@ class Generator
 	end
 
 end
-
-
-
